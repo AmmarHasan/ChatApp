@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <ul ng-repeat="message in messages">
+  	<li>{{message.user}} : {{message.text}}</li>
+  </ul>
+</div>
+
+<div class="row marketing">
+  <input type="text" class="form-control" ng-model="currentUser"/>
+  <input type="text" class="form-control" ng-model="currentText"/>
+  <button type="button" class="btn btn-success" ng-click="sendMessage()">Send</button>
+  <button type="button" class="btn btn-danger" ng-click="turnFeedOff()">Turn Feed On</button>
+</div>
